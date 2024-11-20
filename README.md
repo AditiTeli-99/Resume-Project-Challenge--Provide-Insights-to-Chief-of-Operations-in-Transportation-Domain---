@@ -2,7 +2,8 @@
 
 #### This document provides metadata descriptions for the tables in the `trips_db` and `targets_db` databases. 
 
-### trips_db: This database contains both detailed and aggregated data on trips, passenger types, and repeat trip behavior for Goodcabs' operations across tier-2 cities. It organizes trip data by city, month, and day type (weekday or weekend), enabling comprehensive analysis of travel patterns, passenger demographics, and repeat usage trends.
+### trips_db: 
+This database contains both detailed and aggregated data on trips, passenger types, and repeat trip behavior for Goodcabs' operations across tier-2 cities. It organizes trip data by city, month, and day type (weekday or weekend), enabling comprehensive analysis of travel patterns, passenger demographics, and repeat usage trends.
 
 #### 1. dim_city
 Purpose: This table provides city-specific details, enabling location-based analysis of trips and passenger behavior across Goodcabs’ operational areas.
@@ -47,4 +48,21 @@ Purpose: This table provides detailed information on each individual trip, inclu
 - passenger_rating: Rating provided by the passenger for the trip, on a scale from 1 to 10.
 - driver_rating: Rating provided by the driver for the passenger, on a scale from 1 to 10.
 
+
+### targets_db: 
+This database holds Goodcabs' monthly targets for each city, including goals for trip counts, new passenger acquisition, and average passenger ratings. It enables performance evaluations against key benchmarks set by the company.
+
+#### 1. city_target_passenger_rating
+- city_id: Unique identifier for each city.
+- target_avg_passenger_rating: The target average passenger rating that Goodcabs aims to achieve for each city, used to monitor customer satisfaction.
+
+#### 2. monthly_target_new_passengers
+- month: The start date of the target month (formatted as YYYY-MM-DD) to align with other time-based data.
+- city_id: Unique identifier for each city.
+- target_new_passengers: The target number of new passengers Goodcabs aims to acquire in each city for the specified month, supporting growth tracking.
+
+#### 3. monthly_target_trips
+- month: The start date of the target month (formatted as YYYY-MM-DD) for easy alignment with monthly performance data.
+- city_id: Unique identifier for each city.
+- total_target_trips: The target number of total trips Goodcabs aims to achieve for each city and month, enabling assessment of trip volume performance.
 
