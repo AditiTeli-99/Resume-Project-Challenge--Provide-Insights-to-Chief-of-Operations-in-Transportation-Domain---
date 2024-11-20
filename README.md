@@ -2,7 +2,7 @@
 
 #### This document provides metadata descriptions for the tables in the `trips_db` and `targets_db` databases. 
 
-#### trips_db: This database contains both detailed and aggregated data on trips, passenger types, and repeat trip behavior for Goodcabs' operations across tier-2 cities. It organizes trip data by city, month, and day type (weekday or weekend), enabling comprehensive analysis of travel patterns, passenger demographics, and repeat usage trends.
+### trips_db: This database contains both detailed and aggregated data on trips, passenger types, and repeat trip behavior for Goodcabs' operations across tier-2 cities. It organizes trip data by city, month, and day type (weekday or weekend), enabling comprehensive analysis of travel patterns, passenger demographics, and repeat usage trends.
 
 #### 1. dim_city
 Purpose: This table provides city-specific details, enabling location-based analysis of trips and passenger behavior across Goodcabs’ operational areas.
@@ -35,7 +35,7 @@ Purpose: This table provides a breakdown of repeat trip behavior, aggregated by 
 - repeat_passenger_count: The count of repeat passengers associated with each specified trip_count for the city and month.
 
 
-- #### 5. fact_trips
+#### 5. fact_trips
 Purpose: This table provides detailed information on each individual trip, including trip-specific metrics like distance, fare, and ratings, which can be used for granular trip-level analysis.
 
 - trip_id: Unique identifier for each trip.
