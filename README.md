@@ -66,3 +66,5 @@ This database holds Goodcabs' monthly targets for each city, including goals for
 - city_id: Unique identifier for each city.
 - total_target_trips: The target number of total trips Goodcabs aims to achieve for each city and month, enabling assessment of trip volume performance.
 
+
+
